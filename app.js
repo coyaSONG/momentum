@@ -1,7 +1,15 @@
-function sayHello(name) {
-  console.log("Hello my name is " + name);
+const player = {
+  name: "coya",
+  sayHello: function (name) {
+    console.log("hello! " + name + " Nice to meet you");
+  },
+};
+
+console.log(player.name);
+player.sayHello("abc");
+
+function plus(a, b) {
+  console.log(a + b);
 }
 
-sayHello("coya");
-sayHello("123");
-sayHello("456456");
+plus(2, 3);
