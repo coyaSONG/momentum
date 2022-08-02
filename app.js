@@ -1,25 +1,15 @@
-const calculator = {
-  plus: function (a, b) {
-    return a + b;
-  },
-  minus: function (a, b) {
-    return a - b;
-  },
-  times: function (a, b) {
-    return a * b;
-  },
-  divide: function (a, b) {
-    return a / b;
-  },
-  powerof: function (a, b) {
-    return a ** b;
-  },
-};
+const age = parseInt(prompt("몇살인가요?"));
 
-const res1 = calculator.plus(2, 3);
-const res2 = calculator.minus(res1, 5);
-const res3 = calculator.times(res1, res2);
-const res4 = calculator.divide(res3, 5);
-const res5 = calculator.powerof(res4, res3);
-
-console.log(res5);
+if (isNaN(age) || age < 0) {
+  console.log("숫자 혹은 양의 정수가 아닙니다.");
+} else if (age < 18) {
+  console.log("18살 미만입니다.");
+} else if (age >= 18 && age <= 50) {
+  console.log("18살 이상 50살 이하입니다.");
+} else if (age > 50 || age <= 80) {
+  console.log("50살 초과 80살 이하입니다.");
+} else if (age === 100) {
+  console.log("100살 입니다.");
+} else if (age > 80) {
+  console.log("80초과 입니다.");
+}
