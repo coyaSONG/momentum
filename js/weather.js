@@ -16,7 +16,7 @@ function onGeoComplete(position) {
 }
 
 function onGeoError() {
-  alert("Can't find Location Data");
+  alert("Can't find your Location Data");
 }
 
 navigator.geolocation.getCurrentPosition(onGeoComplete, onGeoError);
