@@ -116,12 +116,12 @@ button:focus {
   outline: none;
 }
 
-#outBtn img {
+#outBtn iconImg {
   position: relative;
   left: 2px;
 }
 
-#img {
+#iconImg {
   width: 40px;
   height: auto;
 }
