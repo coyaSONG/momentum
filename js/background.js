@@ -25,9 +25,10 @@ const IMG_NUMBER = 9;
 
 function paintImage(imgNumber) {
   const image = document.createElement("img");
-  image.src = `img/${imgNumber + 1}.jpg`;
+  image.src = `img/${imgNumber}.jpg`;
+  image.alt = "background images";
   image.classList.add("bgImage");
-  body.appendChild(image);
+  body.prepend(image);
 }
 
 function genRandom() {
@@ -37,10 +38,10 @@ function genRandom() {
 
 function init() {
   const randomNumber = genRandom();
-  paintImage(randomNumber);
+  paintImage(Math.floor(Math.random() * images.length));
 }
 
 init();
 
-const colorBtn = document.querySelector("#colorBtn");
-colorBtn.addEventListener("click", init);
+const changeImgBtn = document.querySelector("#changeImgBtn");
+changeImgBtn.addEventListener("click", init);

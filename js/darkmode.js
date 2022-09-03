@@ -1,9 +1,9 @@
 function setDarkMode() {
   const darkMode = document.querySelectorAll(".darkMode");
   const wrap = document.querySelector("#wrap");
-  const darkModeImg = darkModeBtn.querySelector("img");
+  const darkModeImg = darkModeBtn.querySelector("iconImg");
   const outBtn = document.querySelector("#outBtn");
-  const outBtnImg = outBtn.querySelector("img");
+  const outBtnImg = outBtn.querySelector("iconImg");
   const isDarkMode = localStorage.getItem("darkmode");
   if (isDarkMode === "true") {
     darkMode.forEach((element) => {
